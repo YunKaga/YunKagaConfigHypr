@@ -1,0 +1,24 @@
+# Игнорируем каталог в корне рабочей директории
+/bashtop/
+/dconf/
+/gnome-session/
+/go/
+/gtk-3.0/
+/ibus/
+/libreoffice/
+/nautilius/
+/pulse/
+/spotify/
+/systemd/
+/waybar/
+/xfce4/
+/yay/
+/Thunar/
+/autostart/
+
+# Игнорируем файл в любой директории проекта
+.gsd-keyboard.settings-ported
+QtProject.conf
+pavucontrol.ini
+user-dirs.dirs
+user-dirs.locale
