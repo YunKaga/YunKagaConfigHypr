@@ -53,7 +53,15 @@ require("lazy").setup({
     {'hrsh7th/vim-vsnip-integ' },
     { 'jackieaskins/cmp-emmet', build = 'npm run release'  },
     { 'onsails/lspkind.nvim' },
+    { "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+        vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
 },
-  install = { colorscheme = { "habamax" } },
+},
+install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
 })
