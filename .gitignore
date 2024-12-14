@@ -25,6 +25,6 @@ pavucontrol.ini
 user-dirs.dirs
 user-dirs.locale
 ags
-lazy-lock.json
+/nvim/lazy-lock.json
 
 # игнорируем каталог внутри любового католога
