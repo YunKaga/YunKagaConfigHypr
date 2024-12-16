@@ -8,6 +8,12 @@
 
 ![Alt Text](./preview/HyprLandPreview.png)
 
+#### Для HyprLand использовались такие дополнения:
+- mako - daemon уведомлений
+- thunar - файловый менеджер
+- wofi - меню вызова приложений
+- hyprpaper - обои для hyprland
+
 ## HyprPaper
 
 #### обои
@@ -18,9 +24,10 @@
 ## waybar
 
 ![Alt Text](./preview/waybar_preview.png)
+
 ## Neovim
 
-В нем присутствует плагин Mason. Установленные языковые серверы:
+#### В нем присутствует плагин Mason. Установленные языковые серверы:
 
 - clangd
 - emmet-ls
