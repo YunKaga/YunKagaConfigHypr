@@ -6,7 +6,7 @@
 
 ## Hyprland
 
-![Alt Text](./preview/hyprland_preview.jpg)
+![Alt Text](./preview/HyprLandPreview.png)
 
 ## HyprPaper
 
