@@ -1,6 +1,6 @@
 # Это мои файлы конфигурации
 
-### Здесь вы можете найти мои конфигурации neovim, kitty, fasfetch, hyprland, waybar
+### Здесь вы можете найти мои конфигурации neovim, kitty, fasfetch, hyprland, waybar, mako
 
 ###### в дальнейшем возможно добавление новых конфигураций :)
 
@@ -8,11 +8,12 @@
 
 ![Alt Text](./preview/HyprLandPreview.png)
 
+![Alt Text](./preview/HyprLandPreview2.png)
+
 #### Для HyprLand использовались такие дополнения:
 - mako - daemon уведомлений
 - thunar - файловый менеджер
 - wofi - меню вызова приложений
-- hyprpaper - обои для hyprland
 
 ## HyprPaper
 
