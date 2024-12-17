@@ -12,12 +12,12 @@
         "cpu",
         "temperature",
         "memory",
+        "hyprland/language",
     ],
     "modules-center": [
         "hyprland/workspaces",
     ],
     "modules-right": [
-        "hyprland/language",
         "pulseaudio",
         "network",
         "bluetooth",
@@ -38,7 +38,7 @@
             "1": "",
             "2": "",
             "3": "",
-            "4": "",
+            "4": "",
             "5": "",
             "6": "",
             "10": "󰎚",
@@ -113,7 +113,7 @@
     },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-source": "",
