@@ -1,6 +1,6 @@
 # Это мои файлы конфигурации
 
-### Здесь вы можете найти мои конфигурации neovim, kitty, fasfetch, hyprland, waybar, mako
+### Здесь вы можете найти мои конфигурации neovim, kitty, fasfetch, hyprland, hypeidle, hyprlock, waybar, mako
 
 ###### в дальнейшем возможно добавление новых конфигураций :)
 
