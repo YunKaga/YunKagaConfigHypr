@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 1);
+    background-color: rgba(43, 48, 59, 0.7);
     /*border-bottom: 3px solid #24CBD9; */
     color: #ffffff;
     transition-property: background-color;
@@ -237,10 +237,6 @@ label:focus {
     margin: 0 4px;
     background-color: #1DB954;
     color: black;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
 }
 
 #temperature {

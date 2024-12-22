@@ -60,7 +60,7 @@
     "cpu": {
         "interval": 3,
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
     },
     "memory": {
         "interval": 3,
