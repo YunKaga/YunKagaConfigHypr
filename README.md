@@ -70,3 +70,7 @@
 - typescript-language-server
 
 #### *Тема:* [onedark:dark](https://github.com/navarasu/onedark.nvim)
+
+## Kitty
+
+##### Добавлено сочетание клавиш Ctrl+Shift+o+1 для отключения прозрачности терминала и Ctrl+Shift+o+0 для включения
