@@ -49,7 +49,6 @@
 + pulseaudio
 + network
 + bluetooth
-+ power-profiles-daemon"
 + backlight
 + battery
 + clock
