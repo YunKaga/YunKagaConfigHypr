@@ -5,7 +5,6 @@
     "height": 35, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 7, // Gaps between modules (4px)
-    // Choose the order of the modules
     "modules-left": [
         "tray",
         "custom/spotify",
@@ -53,7 +52,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%d %b %a %H:%M}",
+        "format": "{:%H:%M, %d %b %a }",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -129,17 +128,17 @@
         "on-click": "pavucontrol"
     },
     "hyprland/language": {
-        "format": "󰌌 {}",
+        "format": "{} 󰌌",
         "format-en": "US",
         "format-ru": "РУ",
     },
     "custom/spotify": {
-    "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
-    "format": "  {}",
-    "return-type": "json",
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous"
+        "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+        "format": "  {}",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
     },
     "bluetooth": {
         "format": "{status}",
