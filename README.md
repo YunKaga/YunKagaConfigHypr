@@ -16,6 +16,7 @@
 + [*hypridle*](https://github.com/hyprwm/hypridle)
 + [*hyprlock*](https://github.com/hyprwm/hyprlock)
 + [*hyprpicker*](https://github.com/hyprwm/hyprpicker)
++ [*hyprpaper*](https://github.com/hyprwm/hyprpaper)
 
 #### Дополнительные программы
 
