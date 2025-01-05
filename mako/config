@@ -6,7 +6,7 @@ output=eDP-1
 layer=top
 anchor=top-right
 
-font=monospace 15
+font=JetBrains Nerd Mono 15
 background-color=#798BC7D0
 text-color=#d5d6d7
 width=430
