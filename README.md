@@ -73,4 +73,8 @@
 
 ## Kitty
 
+### Используется командная оболочка zsh вместе с [Oh my zsh](https://ohmyz.sh/)
+
+##### Шрифт: JetBrainsMono Nerd Font Mono
+
 ##### Добавлено сочетание клавиш Ctrl+Shift+o+1 для отключения прозрачности терминала и Ctrl+Shift+o+0 для включения
