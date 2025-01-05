@@ -66,7 +66,7 @@ class PlayerManager:
 
     def write_output(self, text, player):
         logger.debug(f"Writing output: {text}")
-        max_length = 30  # Задаём максимальную длину строки
+        max_length = 28  # Задаём максимальную длину строки
         truncated_text = (text[:max_length] + '...') if len(text) > max_length else text
         output = {"text": truncated_text,
                   "class": "custom-" + player.props.player_name,
