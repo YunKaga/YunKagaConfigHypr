@@ -15,7 +15,7 @@ get_icon() {
 		echo "$iDIR/volume-mute.png"
 	elif [[ ("$current" -ge "0") && ("$current" -le "30") ]]; then
 		echo "$iDIR/low-volume.png"
-	elif [[ ("$current" -ge "30") && ("$current" -le "60") ]]; then
+	elif [[ ("$current" -ge "30") && ("$current" -le "65") ]]; then
 		echo "$iDIR/medium-volume.png"
 	elif [[ ("$current" -ge "60") ]]; then
 		echo "$iDIR/high-volume.png"
