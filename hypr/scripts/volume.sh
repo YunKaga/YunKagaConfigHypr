@@ -1,5 +1,7 @@
 #!/usr/bin/zsh
 
+iDIR="$HOME/.config/mako/icons"
+
 # Get Volume
 get_volume() {
 	volume=$(pamixer --get-volume)
@@ -10,13 +12,13 @@ get_volume() {
 get_icon() {
 	current=$(get_volume)
 	if [[ "$current" -eq "0" ]]; then
-		echo " "
+		echo "$iDIR/volume-mute.png"
 	elif [[ ("$current" -ge "0") && ("$current" -le "30") ]]; then
-		echo ""
+		echo "$iDIR/low-volume.png"
 	elif [[ ("$current" -ge "30") && ("$current" -le "60") ]]; then
-		echo ""
+		echo "$iDIR/medium-volume.png"
 	elif [[ ("$current" -ge "60") ]]; then
-		echo ""
+		echo "$iDIR/high-volume.png"
 	fi
 }
 
@@ -38,7 +40,7 @@ dec_volume() {
 # Toggle Mute
 toggle_mute() {
 	if [[ "$(pamixer --get-mute)" == "false" ]]; then
-		wpctl set-mute @DEFAULT_SINK@ 1 && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i " " "Volume Switched OFF"
+		wpctl set-mute @DEFAULT_SINK@ 1 && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$iDIR/volume-mute.png" "Volume Switched OFF"
 	elif [[ "$(pamixer --get-mute)" == "true" ]]; then
 		wpctl set-mute @DEFAULT_SINK@ 0 && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Volume Switched ON"
 	fi
