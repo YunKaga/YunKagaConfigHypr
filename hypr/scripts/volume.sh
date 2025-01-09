@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/bash
 
 iDIR="$HOME/.config/mako/icons"
 
