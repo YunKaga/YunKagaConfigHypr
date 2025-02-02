@@ -64,10 +64,8 @@
 #### В нем присутствует плагин Mason. Установленные языковые серверы:
 
 - clangd
-- emmet-ls
 - lua-language-server
 - pyright
-- typescript-language-server
 
 #### *Тема:* [onedark:dark](https://github.com/navarasu/onedark.nvim)
 
