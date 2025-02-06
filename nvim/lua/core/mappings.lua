@@ -9,14 +9,15 @@ cmd("set iminsert=0")
 cmd("set imsearch=0")
 
 -- NeoTree
-
 keymap.set('n', '<C-n>', ':Neotree float<CR>')
 keymap.set('n', '<leader>l', ':Neotree left<CR>')
 
 -- Global
 keymap.set('i', 'jj', '<ESC>')
+
 keymap.set('n', '<leader>w', ':w<CR>', {silent = true})
 keymap.set('n', '<leader>q', ':q<CR>')
+keymap.set('n', '<C-q>', ':q!<CR>')
 
 -- insert
 keymap.set('i', '<C-H>', '<Left>')
@@ -48,9 +49,9 @@ end
 
 keymap.set('n', '<leader>t', '<C-w>s<C-w>j:terminal<CR>')
 keymap.set('t', '<ESC>', '<C-\\><C-n>')
+keymap.set('t', '<C-e>', '<C-c><C-\\><C-n>:q<CR>')
 keymap.set('n', '<F9>c', compile_and_run_CPP)
 keymap.set('n', '<F9>p', run_Python)
-keymap.set('t', '<C-e>', '<C-c><C-\\><C-n>:q<CR>')
 
 -- Windows
 keymap.set('n', '<C-h>', '<C-w>h')
