@@ -2,7 +2,7 @@
 {
     //"layer": "top", // Waybar at top layer
     //"position": "top", // Waybar position (top|bottom|left|right)
-    "height": 35, // Waybar height (to be removed for auto height)
+    "height": 39, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 7, // Gaps between modules (4px)
     "modules-left": [
@@ -112,7 +112,7 @@
             "headset": "",
             "phone": "",
             "portable": "",
-            "default": ["", "", ""]
+            //"default": ["", "", ""]
         },
         "on-click": "pavucontrol"
     },
