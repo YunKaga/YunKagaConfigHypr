@@ -10,3 +10,5 @@ lspconfig.clangd.setup({
 lspconfig.pyright.setup{}
 
 lspconfig.lua_ls.setup({})
+
+lspconfig.bashls.setup{}
