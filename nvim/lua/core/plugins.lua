@@ -28,17 +28,14 @@ require("lazy").setup({
     },
     { 'nvim-treesitter/nvim-treesitter' },
     { 'navarasu/onedark.nvim' },
-    {
-    "williamboman/mason.nvim",
+    { "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
-    },
+    "neovim/nvim-lspconfig" },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/cmp-buffer' },
     { 'hrsh7th/cmp-path' },
     { 'hrsh7th/cmp-cmdline' },
     { 'hrsh7th/nvim-cmp' },
-    { 'jose-elias-alvarez/null-ls.nvim' },
     { 'windwp/nvim-autopairs',
     event = "InsertEnter",
     config = true
@@ -61,7 +58,18 @@ require("lazy").setup({
     end,
     ft = { "markdown" },
 },
+    { "rachartier/tiny-inline-diagnostic.nvim",
+    event = "VeryLazy", -- Or `LspAttach`
+    priority = 1000, -- needs to be loaded in first
+    config = function()
+        require('tiny-inline-diagnostic').setup()
+        vim.diagnostic.config({ virtual_text = false }) -- Only if needed in your configuration, if you already have native LSP diagnostics
+    end
+},
+
+
+
 },
 install = { colorscheme = { "habamax" } },
-  checker = { enabled = true },
+  checker = { enabled = false },
 })
