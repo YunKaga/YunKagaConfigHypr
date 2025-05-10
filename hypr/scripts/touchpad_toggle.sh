@@ -1,13 +1,23 @@
 #!/bin/bash
 
-#        disable_while_typing = true
-tmp=$(cat ~/.config/hypr/hyprland.conf | grep "disable_while")
-tf=${tmp:31}
+tmp=$(cat ~/.config/hypr/UserConfig/touchpad.conf | grep "enabled")
+tf=${tmp:14}
 
-if [[ $tf == "true" ]]; then
-    sed -i "s/        disable_while_typing = true/        disable_while_typing = false/" ~/.config/hypr/hyprland.conf
-    notify-send "disable_while_typing" "Now deactivate"
-else
-    sed -i "s/        disable_while_typing = false/        disable_while_typing = true/" ~/.config/hypr/hyprland.conf
-    notify-send "disable_while_typing" "Now active"
+on() {
+    sed -i "s/enabled = false/enabled = true/" ~/.config/hypr/UserConfig/touchpad.conf
+    notify-send "touchpad" "Enable"
+}
+
+off() {
+    sed -i "s/enabled = true/enabled = false/" ~/.config/hypr/UserConfig/touchpad.conf
+    notify-send "touchpad" "Disabled"
+}
+
+
+if [[ "$tf" == "true" ]]; then
+    off
+
+elif [[ "$tf" == "false" ]]; then
+    on
+
 fi
