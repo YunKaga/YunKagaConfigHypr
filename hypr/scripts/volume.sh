@@ -4,7 +4,7 @@ iDIR="$HOME/.config/mako/icons"
 
 # Get Volume
 get_volume() {
-	volume=$(pamixer --get-volume)
+    volume=$(wpctl get-volume @DEFAULT_SINK@ | sed -e "s/\.//" | sed -e "s/Volume: 0/Volume: /")
 	echo "$volume"
 }
 
@@ -24,7 +24,7 @@ get_icon() {
 
 # Notify
 notify_user() {
-	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Volume : $(get_volume) %"
+	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "$(get_volume) %"
 }
 
 # Increase Volume
