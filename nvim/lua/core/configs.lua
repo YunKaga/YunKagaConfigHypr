@@ -12,6 +12,8 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.o.shell = "zsh"
+
 vim.cmd [[
     autocmd TermOpen * startinsert | setlocal nonumber norelativenumber
 ]]
