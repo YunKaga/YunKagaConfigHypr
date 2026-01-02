@@ -6,15 +6,15 @@
     // "width": 1280, // Waybar width
     "spacing": 7, // Gaps between modules (4px)
     "modules-left": [
-        "tray",
         "custom/spotify",
         "cpu",
         "temperature",
         "memory",
-        "hyprland/language",
     ],
     "modules-center": [
+        "tray",
         "hyprland/workspaces",
+        "hyprland/language",
     ],
     "modules-right": [
         "pulseaudio",
