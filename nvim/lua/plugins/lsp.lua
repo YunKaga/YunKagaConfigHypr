@@ -1,14 +1,18 @@
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local lspconfig = require('lspconfig')
-lspconfig.clangd.setup({
+vim.lsp.enable('clangd')
+vim.lsp.config('clangd', {
     cmd = { "clangd" },
     filetypes = {"c", "cpp", "hpp", "h", "objc", "objcpp"},
     single_file_support = true,
     capabilities = capabilities,
 })
 
-lspconfig.pyright.setup{}
+vim.lsp.enable('pyright')
 
-lspconfig.lua_ls.setup({})
+vim.lsp.enable('lua_ls')
 
-lspconfig.bashls.setup{}
+vim.lsp.enable('bashls')
+
+vim.lsp.enable('cmake')
+
+vim.lsp.enable('emmet_language_server')
