@@ -1,0 +1,3 @@
+pacman -S nvim git hyprland waybar hyprpaper hypridle hyprlock hyprpicker grim slurp mako networkmanager blueman bluez brightnessctl alsa pipewire wireplumber zsh kitty cmake telegram-desktop firefox wofi thunar ttf-jetbrains-mono-nerd libreoffice-still-ru bashtop fastfetch
+yay
+yay -S spotify zoom
