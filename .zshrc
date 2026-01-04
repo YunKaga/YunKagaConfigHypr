@@ -5,24 +5,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time Oh My Zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -33,11 +20,11 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
+zstyle ':omz:update' frequency 14
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -55,7 +42,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -82,7 +69,8 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
-    )
+    z
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,20 +111,21 @@ alias "szsh"="source ~/.zshrc"
 
 if [ -x "$(command -v eza)" ]; then
     alias ls="eza"
-    alias la="eza --long --all --group"
+    alias la="eza --long --all --group --icons"
 fi
 
-alias "df"="duf"
-
 # power managment
-alias "reboot"="systemctl reboot"
 alias "poweroff"="systemctl poweroff"
 alias "suspend"="systemctl suspend"
+alias "reboot"="systemctl reboot"
+
+alias "df"="duf"
 
 # Custom apps
 alias "ff"="fastfetch"
 alias "n"="nvim"
 alias "py"="python"
+alias "ACM"="~/prog/myProject/Learn_project/AutoCMake.sh"
 
 alias "git_tok"="cat ~/Documents/.Git/config | wl-copy -n"
 function git_chtok(){
@@ -147,6 +136,19 @@ function git_chtok(){
         * ) echo "Что-то пошло не так";;
     esac
 }
+
+# Trash
+alias "thp"="trash-put"
+alias "the"="trash-empty"
+alias "thl"="trash-list"
+alias "thre"="trash-restore"
+
+# Zapret for YouTube and other
+alias "zapret"="~/gitclone/zapret-discord-youtube-linux/main_script.sh -nointeractive"
+
+# Network Manager
+alias "nml"="nmcli d wifi rescan && nmcli d wifi list"
+alias "nmc"="nmcli d wifi -a connect"
 
 # alias "c"="clear"
 

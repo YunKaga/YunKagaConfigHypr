@@ -302,7 +302,7 @@ label:focus {
 .modules-left,
 .modules-center,
 .modules-right {
-    padding: 0 10px;
+    padding: 0 10px 2px;
 }
 
 #custom-spotify.playing {
