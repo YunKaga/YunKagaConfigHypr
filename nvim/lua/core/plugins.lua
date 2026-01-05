@@ -26,7 +26,10 @@ require("lazy").setup({
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     }
     },
-    { 'nvim-treesitter/nvim-treesitter' },
+    { 'nvim-treesitter/nvim-treesitter',
+      lazy = false,
+      build = ':TSUpdate',
+    },
     { 'navarasu/onedark.nvim' },
     { "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",

@@ -6,7 +6,6 @@ require('core.configs')
 
 -- Plugins
 require('plugins.neotree')
-require('plugins.treesitter')
 require('plugins.cmp')
 require('plugins.lsp')
 require('plugins.mason')
