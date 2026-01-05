@@ -1,7 +1,7 @@
 # Это мои файлы конфигурации
 
 
-### Здесь вы можете найти мои конфигурации hyprland, hypeidle, hyprlock, waybar, neovim, mako, kitty, fasfetch
+### Здесь вы можете найти мои конфигурации hyprland, waybar, neovim, mako, kitty, fasfetch, wofi, zsh
 
 ###### в дальнейшем возможно добавление новых конфигураций :)
 
@@ -36,15 +36,15 @@
 ![Alt Text](./preview/waybar_preview.png)
 
 ### Модули слева:
-+ tray
 + custom/spotify
 + cpu
 + temperature
 + memory
-+ hyprland/language
 
 ### Модули по центру:
++ tray
 + hyprland/workspaces
++ hyprland/language
 
 ### Модули справа:
 + pulseaudio
@@ -66,6 +66,11 @@
 - clangd
 - lua-language-server
 - pyright
+- actionlint
+- bash-language-server
+- cmake-language-server
+- emmet-language-server
+
 
 #### *Тема:* [onedark:dark](https://github.com/navarasu/onedark.nvim)
 
