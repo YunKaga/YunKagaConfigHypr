@@ -1,10 +1,6 @@
 #!/bin/bash
 
 # Конфиги
-mkdir ~/gitclone
-cd ~/gitclone
-git clone https://github.com/YunKaga/YunKagaConfigHypr
-cd ./YunKagaConfigHypr
 mkdir ~/.config
 rm -r ./README.md ./pockets.txt ./preview
 mv ./* ~/.config/
@@ -18,11 +14,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 source ~/.zshrc
 
+chsh -s /bin/zsh $USER
+
 cd ~/gitclone/
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
 yay -Sy spotify zoom
-
-chsh -s /bin/zsh $USER
