@@ -7,6 +7,7 @@ fi
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR=nvim
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
