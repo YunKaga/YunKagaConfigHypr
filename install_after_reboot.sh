@@ -20,4 +20,4 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 rm ~/.zshrc 2> /dev/null
 cp ~/.config/.zshrc ~/
 
-source ~/.zshrc
+rm ~/.bashrc ~/.bash_logout ~/.bash_profile
