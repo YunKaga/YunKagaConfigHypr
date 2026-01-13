@@ -40,7 +40,7 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 4px 5px;
     background-color: transparent;
     color: #FFB86C;
     border-radius: 8px;
@@ -95,7 +95,8 @@ button:hover {
 #workspaces {
     font-weight: bold;
     font-size: 20px;
-    margin: 0 4px;
+    margin: 2 4px;
+    padding-right: 7px;
     background-color: #3d3d3d;
     border: solid 2px #4d4d4d;
     border-radius: 15px;
@@ -218,6 +219,7 @@ label:focus {
     color: black;
     border-color: #1ed760;
     border-width: 2px;
+    margin-left: 5px;
 }
 
 #custom-spotify:hover {
@@ -227,7 +229,7 @@ label:focus {
 
 #temperature {
     background-color: #3d3d3d;
-    color: #F1AD84;
+    color: #57B4C1;
     border-color: #4d4d4d;
 }
 
@@ -239,7 +241,6 @@ label:focus {
 #tray {
     background-color: #3d3d3d;
     color: #2FC0EF;
-    margin-left: 5px;
     border-color: #4d4d4d;
 }
 
@@ -257,6 +258,7 @@ label:focus {
     background-color: #3d3d3d;
     color: #87E1F5;
     padding: 0 5px;
+    padding-right: 10px;
     min-width: 16px;
     border-color: #4d4d4d;
 }

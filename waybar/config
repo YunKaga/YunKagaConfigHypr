@@ -1,10 +1,8 @@
 // -*- mode: jsonc -*-
 {
-    //"layer": "top", // Waybar at top layer
-    //"position": "top", // Waybar position (top|bottom|left|right)
+    //"output": ["DP-1", "HDMI-A-1"],
     "height": 39, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 7, // Gaps between modules (4px)
+    "spacing": 7, // Gaps between modules
     "modules-left": [
         "custom/spotify",
         "cpu",
@@ -12,9 +10,9 @@
         "memory",
     ],
     "modules-center": [
-        "tray",
-        "hyprland/workspaces",
         "hyprland/language",
+        "hyprland/workspaces",
+        "tray",
     ],
     "modules-right": [
         "pulseaudio",
@@ -31,6 +29,9 @@
             "1": [],
             "2": [],
             "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
         },
         "format": "{name} {icon}",
         "format-icons": {
@@ -71,7 +72,7 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""]
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -93,7 +94,8 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
+        //"format-ethernet": "{ipaddr}/{cidr} ",
+        "format-ethernet": "KABEL ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
